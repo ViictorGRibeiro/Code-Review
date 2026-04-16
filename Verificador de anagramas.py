@@ -20,3 +20,11 @@ def sao_anagramas(string1, string2):
 print(sao_anagramas("feio", "bunito"))
 print(sao_anagramas("bota ", "toba"))
 print(sao_anagramas("tijolo", "Lojito"))
+
+def cifra_de_cesar(texto, deslocamento):
+    # TODO: Implementar a lógica
+    pass
+
+def encontrar_maior_palavara(frase):
+    # TODO: Implementar a lógica
+    pass
