@@ -22,9 +22,23 @@ print(sao_anagramas("bota ", "toba"))
 print(sao_anagramas("tijolo", "Lojito"))
 
 def cifra_de_cesar(texto, deslocamento):
-    # TODO: Implementar a lógica
-    pass
+    resultado = ""
+
+    for char in texto:
+        if char.isalpha():  # verifica se é letra
+            # define base (maiúscula ou minúscula)
+            base = ord('A') if char.isupper() else ord('a')
+            
+            # aplica o deslocamento
+            nova_letra = (ord(char) - base + deslocamento) % 26 + base
+            
+            resultado += chr(nova_letra)
+        else:
+            # mantém espaços e símbolos
+            resultado += char
+    return resultado
 
 def encontrar_maior_palavara(frase):
     # TODO: Implementar a lógica
     pass
+
