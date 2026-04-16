@@ -17,8 +17,6 @@ def cifra_de_cesar(texto, deslocamento):
         else:
             # mantém espaços e símbolos
             resultado += char
-
-    print("o meu chafe é gay")
     return resultado
 
 def encontrar_maior_palavara(frase):
