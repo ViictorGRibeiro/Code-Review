@@ -1,6 +1,8 @@
 def sao_anagramas(string1, string2):
-    # TODO: Implementar a lógica
-    pass
+    string1 = string1.replace(" ", "").lower()
+    string2 = string2.replace(" ", "").lower()
+    
+    return sorted(string1) == sorted(string2)
 
 def cifra_de_cesar(texto, deslocamento):
     resultado = ""
@@ -20,6 +22,11 @@ def cifra_de_cesar(texto, deslocamento):
     return resultado
 
 def encontrar_maior_palavara(frase):
-    # TODO: Implementar a lógica
-    pass
+    palavras = frase.split()
+    maior = palavras[0]
 
+    for palavra in palavras:
+        if len(palavra) > len(maior):
+            maior = palavra
+
+    return maior
